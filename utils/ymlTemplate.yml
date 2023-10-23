@@ -1,0 +1,16 @@
+info:
+  namespace: weapons
+items:
+  template_item:
+    display_name: template_name
+    permission: prm
+    resource:
+      generate: false
+      material: NETHERITE_AXE
+      model_path: template_pack/template_item
+    durability:
+      custom_durability: 2234
+    attribute_modifiers:
+      mainhand:
+        attackDamage: 14
+        attackSpeed: 1

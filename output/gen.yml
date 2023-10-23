@@ -1,0 +1,29 @@
+info:
+  namespace: Cambiame
+items:
+  item1:
+    attribute_modifiers:
+      mainhand:
+        attackDamage: 12
+        attackSpeed: 1.6
+    display_name: DispalayName
+    durability:
+      custom_durability: 2234
+    permission: prm
+    resource:
+      generate: false
+      material: ModelPath
+      model_path: Material
+  item2:
+    attribute_modifiers:
+      mainhand:
+        attackDamage: 14
+        attackSpeed: 1
+    display_name: DispalayName2
+    durability:
+      custom_durability: 2234
+    permission: prm
+    resource:
+      generate: false
+      material: ModelPath
+      model_path: Material

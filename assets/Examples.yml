@@ -1,0 +1,254 @@
+info:
+  namespace: weapons
+items:
+  azure_axe:
+    display_name: Azure Axe
+    permission: azure.axe
+    resource:
+      generate: false
+      material: NETHERITE_AXE
+      model_path: azureset/axe
+    durability:
+      custom_durability: 2234
+    attribute_modifiers:
+      mainhand:
+        attackDamage: 14
+        attackSpeed: 1
+  azure_bow:
+    display_name: Azure Bow
+    permission: azure.bow
+    resource:
+      generate: false
+      material: BOW
+      model_path: azureset/bow
+  azure_chest:
+    behaviours:
+      furniture:
+        fixed_rotation: true
+        hitbox:
+          height: 1
+          height_offset: 0
+          length: 1
+          length_offset: 0
+          width: 1
+          width_offset: 0
+        placeable_on:
+          ceiling: false
+          floor: true
+          walls: false
+        solid: true
+    display_name: Azure Chest
+    permission: azure.chest
+    resource:
+      generate: false
+      material: SEA_LANTERN
+      model_path: azureset/chest
+  azure_chest_opening:
+    behaviours:
+      furniture:
+        fixed_rotation: true
+        hitbox:
+          height: 2
+          height_offset: 0
+          length: 1
+          length_offset: 0
+          width: 1
+          width_offset: 0
+        placeable_on:
+          ceiling: false
+          floor: true
+          walls: false
+        solid: true
+    display_name: Azure Chest Opening
+    permission: azure.chest_opening
+    resource:
+      generate: false
+      material: SEA_LANTERN
+      model_path: azureset/chest_opening
+  azure_crossbow:
+    display_name: Azure Crossbow
+    permission: azure.crossbow
+    resource:
+      generate: false
+      material: CROSSBOW
+      model_path: azureset/crossbow
+  azure_fishing_rod:
+    display_name: Azure Fishing Rod
+    permission: azure.fishing_rod
+    durability:
+      custom_durability: 75
+    resource:
+      generate: false
+      material: FISHING_ROD
+      model_path: azureset/fishing_rod
+  azure_greatsword:
+    display_name: Azure Greatsword
+    permission: azure.greatsword
+    durability:
+      custom_durability: 2234
+    attribute_modifiers:
+      mainhand:
+        attackDamage: 12
+        attackSpeed: 1.6
+    resource:
+      generate: false
+      material: NETHERITE_SWORD
+      model_path: azureset/greatsword
+  azure_hammer:
+    display_name: Azure Hammer
+    permission: azure.hammer
+    resource:
+      generate: false
+      material: NETHERITE_AXE
+      model_path: azureset/hammer
+    durability:
+      custom_durability: 2234
+    attribute_modifiers:
+      mainhand:
+        attackDamage: 14
+        attackSpeed: 1
+  azure_hoe:
+    display_name: Azure Hoe
+    permission: azure.hoe
+    durability:
+      custom_durability: 2234
+    attribute_modifiers:
+      mainhand:
+        attackDamage: 2
+        attackSpeed: 4
+    resource:
+      generate: false
+      material: NETHERITE_HOE
+      model_path: azureset/hoe
+  azure_key:
+    display_name: Azure Key
+    permission: azure.key
+    resource:
+      generate: false
+      material: PAPER
+      model_path: azureset/key
+  azure_pickaxe:
+    display_name: Azure Pickaxe
+    permission: azure.pickaxe
+    durability:
+      custom_durability: 2234
+    attribute_modifiers:
+      mainhand:
+        attackDamage: 10
+        attackSpeed: 1.2
+    resource:
+      generate: false
+      material: NETHERITE_PICKAXE
+      model_path: azureset/pickaxe
+  azure_scythe:
+    display_name: Azure Scythe
+    permission: azure.scythe
+    durability:
+      custom_durability: 2234
+    attribute_modifiers:
+      mainhand:
+        attackDamage: 12
+        attackSpeed: 1.6
+    resource:
+      generate: false
+      material: NETHERITE_SWORD
+      model_path: azureset/scythe
+  azure_shield:
+    display_name: Azure Shield
+    permission: azure.shield
+    resource:
+      generate: false
+      material: SHIELD
+      model_path: azureset/shield
+  azure_shovel:
+    display_name: Azure Shovel
+    permission: azure.shovel
+    durability:
+      custom_durability: 2234
+    attribute_modifiers:
+      mainhand:
+        attackDamage: 2
+        attackSpeed: 4
+    resource:
+      generate: false
+      material: NETHERITE_SHOVEL
+      model_path: azureset/shovel
+  azure_spear:
+    display_name: Azure Spear
+    permission: azure.spear
+    durability:
+      custom_durability: 2234
+    attribute_modifiers:
+      mainhand:
+        attackDamage: 12
+        attackSpeed: 1.6
+    resource:
+      generate: false
+      material: NETHERITE_SWORD
+      model_path: azureset/spear
+  azure_staff:
+    display_name: Azure Staff
+    permission: azure.staff
+    durability:
+      custom_durability: 2234
+    attribute_modifiers:
+      mainhand:
+        attackDamage: 12
+        attackSpeed: 1.6
+    resource:
+      generate: false
+      material: NETHERITE_SWORD
+      model_path: azureset/staff
+  azure_sword:
+    display_name: Azure Sword
+    permission: azure.sword
+    durability:
+      custom_durability: 2234
+    attribute_modifiers:
+      mainhand:
+        attackDamage: 12
+        attackSpeed: 1.6
+    resource:
+      generate: false
+      material: NETHERITE_SWORD
+      model_path: azureset/sword
+  azure_trident:
+    display_name: Azure Trident
+    permission: azure.trident
+    durability:
+      custom_durability: 2234
+    attribute_modifiers:
+      mainhand:
+        attackDamage: 12
+        attackSpeed: 1.6
+    resource:
+      generate: false
+      material: NETHERITE_SWORD
+      model_path: azureset/trident
+  azure_wings:
+    display_name: Azure Wing
+    permission: azure.wings
+    resource:
+      generate: false
+      material: PAPER
+      model_path: azureset/wings
+  azure_helmet:
+    display_name: "Azure Helmet"
+    permission: azure.helmet
+    durability:
+      max_custom_durability: 450
+    attribute_modifiers:
+      head:
+        armorToughness: 3
+        armor: 4
+    resource:
+      generate: false
+      material: NETHERITE_SWORD
+      model_path: azureset/helmet
+    behaviours:
+      hat: true
+    events:
+      equipped_armor_item:
+        player_damaged_by_entity:
+          decrement_durability:
+            amount: 1
