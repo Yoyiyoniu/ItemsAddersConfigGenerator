@@ -1,142 +1,54 @@
-class CreateItem:
-    def defaultItem(DisplayName: str, MATERIAL: str, ModelPath: str, custom_durability: int, AttackDamage: float,
-                    AttackSpeed: float):
-        return {
-            'display_name': DisplayName,
+class BaseItem:
+    def __init__(self, display_name: str, material: str, model_path: str, attack_damage: float, attack_speed: float,
+                 custom_durability: int):
+        self.item_data = {
+            'display_name': display_name,
             'permission': 'prm',
             'resource': {
                 'generate': False,
-                'material': MATERIAL,
-                'model_path': ModelPath
+                'material': material,
+                'model_path': model_path
             },
             'durability': {
                 'custom_durability': custom_durability
             },
             "attribute_modifiers": {
                 'mainhand': {
-                    'attackDamage': AttackDamage,
-                    'attackSpeed': AttackSpeed
+                    'attackDamage': attack_damage,
+                    'attackSpeed': attack_speed
                 }
-            }
-
-        }
-
-    def isSword(DisplayName: str, MATERIAL: str, ModelPath: str):
-        return {
-            'display_name': DisplayName,
-            'permission': 'prm',
-            'resource': {
-                'generate': False,
-                'material': MATERIAL,
-                'model_path': ModelPath
-            },
-            'attribute_modifiers': {
-                'mainhand': {
-                    'attackDamage': 12,
-                    'attackSpeed': 1.6
-                }
-            },
-            'durability': {
-                'custom_durability': 2234
             }
         }
 
-    def isAxe(DisplayName: str, MATERIAL: str, ModelPath: str):
-        return {
-            'display_name': DisplayName,
-            'permission': 'prm',
-            'resource': {
-                'generate': False,
-                'material': MATERIAL,
-                'model_path': ModelPath
-            },
-            'attribute_modifiers': {
-                'mainhand': {
-                    'attackDamage': 14,
-                    'attackSpeed': 1
-                }
-            },
-            'durability': {
-                'custom_durability': 2234
-            }
-        }
+    def get_item_data(self):
+        return self.item_data
 
-    def isPicaxe(DisplayName: str, MATERIAL: str, ModelPath: str):
-        return {
-            'display_name': DisplayName,
-            'permission': 'prm',
-            'resource': {
-                'generate': False,
-                'material': MATERIAL,
-                'model_path': ModelPath
-            },
-            'attribute_modifiers': {
-                'mainhand': {
-                    'attackDamage': 10,
-                    'attackSpeed': 1.2
-                }
-            },
-            'durability': {
-                'custom_durability': 2234
-            }
-        }
 
-    def isShovel(DisplayName: str, MATERIAL: str, ModelPath: str):
-        return {
-            'display_name': DisplayName,
-            'permission': 'prm',
-            'resource': {
-                'generate': False,
-                'material': MATERIAL,
-                'model_path': ModelPath
-            },
-            'attribute_modifiers': {
-                'mainhand': {
-                    'attackDamage': 9,
-                    'attackSpeed': 1
-                }
-            },
-            'durability': {
-                'custom_durability': 2234
-            }
-        }
+class Sword(BaseItem):
+    def __init__(self, display_name: str, material: str, model_path: str):
+        super().__init__(display_name, material, model_path, 12, 1.6, 2234)
 
-    def isHoe (DisplayName: str, MATERIAL: str, ModelPath: str):
-        return {
-            'display_name': DisplayName,
-            'permission': 'prm',
-            'resource': {
-                'generate': False,
-                'material': MATERIAL,
-                'model_path': ModelPath
-            },
-            'attribute_modifiers': {
-                'mainhand': {
-                    'attackDamage': 2,
-                    'attackSpeed': 4
-                }
-            },
-            'durability': {
-                'custom_durability': 2234
-            }
-        }
 
-    def isDagger(DisplayName: str, MATERIAL: str, ModelPath: str):
-        return {
-            'display_name': DisplayName,
-            'permission': 'prm',
-            'resource': {
-                'generate': False,
-                'material': MATERIAL,
-                'model_path': ModelPath
-            },
-            'attribute_modifiers': {
-                'mainhand': {
-                    'attackDamage': 2,
-                    'attackSpeed': 4
-                }
-            },
-            'durability': {
-                'custom_durability': 2234
-            }
-        }
+class Axe(BaseItem):
+    def __init__(self, display_name: str, material: str, model_path: str):
+        super().__init__(display_name, material, model_path, 14, 1, 2234)
+
+
+class Pickaxe(BaseItem):
+    def __init__(self, display_name: str, material: str, model_path: str):
+        super().__init__(display_name, material, model_path, 10, 1.2, 2234)
+
+
+class Shovel(BaseItem):
+    def __init__(self, display_name: str, material: str, model_path: str):
+        super().__init__(display_name, material, model_path, 9, 1, 2234)
+
+
+class Hoe(BaseItem):
+    def __init__(self, display_name: str, material: str, model_path: str):
+        super().__init__(display_name, material, model_path, 2, 4, 2234)
+
+
+class Dagger(BaseItem):
+    def __init__(self, display_name: str, material: str, model_path: str):
+        super().__init__(display_name, material, model_path, 2, 4, 2234)

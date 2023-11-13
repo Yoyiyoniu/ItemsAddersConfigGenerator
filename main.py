@@ -1,21 +1,23 @@
 import yaml
-from isItem import CreateItem
+
+import isItem
+
 with open('utils/ymlTemplate.yml', 'r') as file:
     data = yaml.load(file, Loader=yaml.FullLoader)
 
-info = {
-    'namespace': 'Cambiame'
-}
-items = {
-    'items': {
-        'item1': CreateItem.isSword('DispalayName', 'ModelPath', 'Material'),
-        'item2': CreateItem.isAxe('DispalayName2', 'ModelPath', 'Material'),
+total = {
+    "info": {
+        'namespace': 'new_items',
+    },
+    "items": {
+        'gran_espada': isItem.Axe("Gran Espada", "NETHERITE_SWORD", "item/handheld").get_item_data(),
     }
+
 }
 
 # Actualiza los valores en 'data'
-data['info'] = info
-data.update(items)
+data['info'] = total
+data.update(total)
 
 # Guardar los cambios en el archivo YAML
 with open('output/gen.yml', 'w') as file:
